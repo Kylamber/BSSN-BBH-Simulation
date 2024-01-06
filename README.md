@@ -1,16 +1,39 @@
 # BSSN Black Hole Simulation using Python
-Binary black hole simulation using the Baumgarte-Shapiro-Shibata-Nakamura formalism with Python. The code and equations explanation is in the notebook, install the required packages or run in Goolge Colab. Currently the code is only for black hole simulation using Brill-Lindquist initial data. I plan to add support for black holes with linear momentum using Bowen-York initial data.
+Binary black hole simulation using the Baumgarte-Shapiro-Shibata-Nakamura (BSSN) formalism with Python. The code and equations explanation is in the notebook, install the required packages or run in Goolge Colab. Currently the code is only for black hole simulation using Brill-Lindquist initial data. I plan to add support for black holes with linear momentum using Bowen-York initial data.
 
 **Note.** If you plan to run this code locally, keep in mind that out of the box it will use the ./Data/ directory to save the files. To be safe, put the notebook file in an empty folder.
 
 ## Requirements
 This notebook requires:
 - Jupyter
-- PyTorch (Install the CUDA version to enable GPU accelelration)
+- PyTorch (Install the CUDA version to enable GPU acceleration)
 - NumPy
 - Matplotlib
 
 ## Results
+This is the resulting evolution using these parameters. Though unfortunately the simulation crashes before it properly merges.
+```
+Grid:
+resolution = 0.0625
+n_grid = 96
+
+Black hole choice:
+BH_locs = [[0.0, 0.0, 0.5], [0.0, 0.0, -0.5]]
+BH_masses = [0.5, 0.5]
+
+Evolution choice:
+temporal_differencing = RK4
+CF = 0.5
+
+BSSN Parameters:
+damping = 2
+lambdas = [1, 1, 1, 1]
+f1_alpha = 2/alpha
+f2_alpha = one
+enforce_constraints = True
+conformal_variable = phi
+epsilon = 1e-08
+```
 
 https://github.com/Kylamber/BSSN-BBH-Simulation/assets/32596839/863526a6-a4b0-489a-8fea-494354e4c2ef
 
