@@ -1,7 +1,14 @@
 # BSSN Black Hole Simulation using Python
-Binary black hole simulation using the Baumgarte-Shapiro-Shibata-Nakamura formalism with Python. The code is self contained in the notebook, install the required packages or run in Goolge Colab. Currently the code is only for black hole simulation using Brill-Lindquist initial data. I plan to add support for black holes with linear momentum using Bowen-York initial data.
+Binary black hole simulation using the Baumgarte-Shapiro-Shibata-Nakamura formalism with Python. The code and equations explanation is in the notebook, install the required packages or run in Goolge Colab. Currently the code is only for black hole simulation using Brill-Lindquist initial data. I plan to add support for black holes with linear momentum using Bowen-York initial data.
 
 **Note.** If you plan to run this code locally, keep in mind that out of the box it will use the ./Data/ directory to save the files. To be safe, put the notebook file in an empty folder.
+
+## Requirements
+This notebook requires:
+- Jupyter
+- PyTorch (Install the CUDA version to enable GPU accelelration)
+- NumPy
+- Matplotlib
 
 ## Results
 
